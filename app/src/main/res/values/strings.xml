@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="currconverter">Currency Conveter</string>
+    <string name="mainbtn1">Dollar to Rupees</string>
+    <string name="mainbtn2">Pound to Rupees</string>">
+    <string name="mainbtn3">Euro to Rupees</string>">
+    <string name="mainbtn4">Yen to Rupee</string>
+    <string name="mainimg">image of currency converter</string>
+    <string name="dollar">Dollar image</string>
+    <string name="arrow">Arrow Right image</string>
+    <string name="rupees">Rupees image</string>
+    <string name="conDtoR">Converting  Dollar to Rupees</string>
+    <string name="Amount">Enter the Amount</string>
+    <string name="btnconvert">Convert</string>
+    <string name="btnreset">Reset</string>
+    <string name="result">Result</string>
+    <string name="EUR">EUR</string>
+    <string name="conEtoR">Converting  EUR to Rupees</string>
+    <string name="pound">Pound image</string>
+    <string name="conPtoR">Converting  Pound to Rupees</string>
+    <string name="YEN">YEN image</string>
+    <string name="conYtoR">Converting  YEN to Rupees</string>
+</resources>

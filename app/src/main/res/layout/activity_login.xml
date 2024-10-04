@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/color_bg_login"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="15dp"
+        android:src="@drawable/rupeeicon"/>
+    <TextView
+        android:id="@+id/signuptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/loginEmailAddress"
+        android:layout_width="wrap_content"
+        android:background="@drawable/edittext_boder"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Enter your email id"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/login_Password"
+        android:layout_width="wrap_content"
+        android:background="@drawable/edittext_boder"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="enter your password"
+        android:ems="15"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textColor="@color/black"
+        android:id="@+id/btnlogin"
+        android:backgroundTint="@color/green"/>
+    <TextView
+        android:id="@+id/signupredirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="not yet registered, signup"
+        android:textColor="@color/blue"
+        />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/defaultBackground"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".convertingamount">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="100dp"
+            android:contentDescription="@string/dollar"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dollar"/>
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/arrow"
+            android:layout_gravity="center"
+            android:src="@drawable/rightarrow"/>
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/rupees"
+            android:layout_gravity="center"
+            android:src="@drawable/rupee"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conDtoR"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        />
+<androidx.cardview.widget.CardView
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grid"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/edtextdolRup"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="12"
+            android:autofillHints="none"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/Amount"
+            android:inputType="numberDecimal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+        <Button
+            android:id="@+id/butcalute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnconvert"
+            />
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/btnreset"
+
+            />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:text="@string/result" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
